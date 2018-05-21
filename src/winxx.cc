@@ -273,7 +273,7 @@ bool win_should_die() { return tabs.size() == 0; }
 
 static int tabheight() {
     init_scale_factors();
-    return 50 * g_yscale;
+    return 24 * g_yscale;
 }
 
 static bool tab_bar_visible = false;

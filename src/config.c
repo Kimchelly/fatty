@@ -32,7 +32,7 @@ const config default_cfg = {
   .cursor_type = CUR_LINE,
   .cursor_blinks = true,
   // Text
-  .font = {.name = "Fira Code", .isbold = false, .size = 12},
+  .font = {.name = "Fira Code Retina", .isbold = false, .size = 12},
   .font_smoothing = FS_DEFAULT,
   .bold_as_font = -1,  // -1 means "the opposite of bold_as_colour"
   .bold_as_colour = true,
