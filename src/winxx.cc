@@ -273,7 +273,7 @@ bool win_should_die() { return tabs.size() == 0; }
 
 static int tabheight() {
     init_scale_factors();
-    return 23 * g_yscale;
+    return 50 * g_yscale;
 }
 
 static bool tab_bar_visible = false;
@@ -299,7 +299,7 @@ static void set_tab_bar_visibility(bool b) {
 int win_tab_height() { return tab_bar_visible ? tabheight() : 0; }
 
 static int tab_font_size() {
-    return 14 * g_yscale;
+    return 18 * g_yscale;
 }
 
 static HGDIOBJ new_tab_font() {

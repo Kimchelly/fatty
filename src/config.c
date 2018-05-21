@@ -22,17 +22,17 @@ const config default_cfg = {
   // Looks
   .fg_colour = 0xBFBFBF,
   .bg_colour = 0x000000,
-  .tab_fg_colour = 0x00FF00,
+  .tab_fg_colour = 0xE6E6E6,
   .tab_bg_colour = 0x000000,
-  .tab_active_bg_colour = 0x323232,
-  .tab_attention_bg_colour = 0x003200,
+  .tab_active_bg_colour = 0x7A7A7A,
+  .tab_attention_bg_colour = 0x949494,
   .cursor_colour = 0xBFBFBF,
   .transparency = 0,
   .opaque_when_focused = false,
   .cursor_type = CUR_LINE,
   .cursor_blinks = true,
   // Text
-  .font = {.name = "Lucida Console", .isbold = false, .size = 9},
+  .font = {.name = "Fira Code", .isbold = false, .size = 12},
   .font_smoothing = FS_DEFAULT,
   .bold_as_font = -1,  // -1 means "the opposite of bold_as_colour"
   .bold_as_colour = true,

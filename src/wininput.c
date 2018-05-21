@@ -788,6 +788,11 @@ win_key_down(WPARAM wp, LPARAM lp)
       else app_pad_code(key - VK_NUMPAD0 + '0');
     when 'A' ... 'Z' or ' ':
       if (key != ' ' && alt_code_key(key - 'A' + 0xA));
+      // Enable vim movement for tabs
+      else if (shift && ctrl && key == 'H') win_tab_move(-1);
+      else if (ctrl && key == 'H') win_tab_change(-1);
+      else if (shift && ctrl && key == 'L') win_tab_move(1);
+      else if (ctrl && key == 'L') win_tab_change(1);
       else if (shift && ctrl && key == 'T') win_tab_create();
       else if (shift && ctrl && key == 'W') child_terminate(active_term->child);
       else if (char_key());
